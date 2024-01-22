@@ -1,7 +1,8 @@
 :root {
-  --col-bg: #fff;
-  --col-bg-alt: #E6E6E6;
+  --col-bg: rgb(253, 253, 253);
+  --col-bg-alt: rgb(230, 230, 230);
   --col-txt: rgb(60, 60, 60);
+  --col-blue: rgb(42, 42, 248);
 }
 
 * {

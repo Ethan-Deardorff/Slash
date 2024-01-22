@@ -9,8 +9,13 @@
     border-radius: 10em;
     width: fit-content;
     cursor: pointer;
+    border: 1.5px solid transparent;
+}
+
+.primary-btn:active {
+    background: var(--col-bg-alt);
 }
 
 .primary-btn:hover {
-    background-color: var(--col-bg-alt);
+    border: 1.5px solid var(--col-blue);
 }

@@ -79,7 +79,7 @@ function SignInForm() {
                                 required
                             />
                             <label htmlFor="terms-check">Accept Terms<span className='caption'>Required</span></label>
-                            <div className={`column sm-gap ${termsActive ? 'active' : ''}`} id='terms'>
+                            <div className={`column sm-gap ${termsActive ? 'active' : 'null'}`} id='terms'>
                                 <h2>Terms of Service</h2>
                                 <p>
                                     The account created by a user is stored locally and is subject to data leaks. DO NOT ENTER PERSONAL INFORMATION. It is advised to make a temporary account or one with information that is not used anywhere else.
@@ -89,6 +89,7 @@ function SignInForm() {
                                 </p>
                                 <PrimaryBtn onClick={acceptTerms} text='Accept Terms' ariaHidden={ariaHidden.toString()}></PrimaryBtn>
                             </div>
+                            <div id="terms-bg" className={`blur-bg ${termsActive ? 'active' : ''}`}></div>
                         </div>
                         <div className='buttons'>
                             <PrimaryBtn type="submit" text='Log In'></PrimaryBtn>
